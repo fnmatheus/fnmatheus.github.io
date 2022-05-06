@@ -1,17 +1,24 @@
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    height: 100%;
 }
 .topDiv{
     background-color: rgb(19, 19, 19);
     width: 100%;
-    height: 500px;
+    height: 100vh;
 }
 .topText{
+    /* position config */
+    float: right;
     width: 50%;
+    border: 3px;
+    padding-right: 25%;
+    /* text config */
     color: white;
     text-align: center;
     font-weight: lighter;
-    font-size:xx-large;
+    font-size:40px;
     font-weight: 500;
 }
 .topTextColored{
@@ -19,8 +26,10 @@ body{
     font-weight: bold;
 }
 .topImage{
-    width: 20%;
-    border-radius: 100%;
+    float: left;
+    width: 400px;
+    padding-left: 7.9%;
+    padding-top: 10%;
 }
 .index{
     background-color: black;
