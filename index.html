@@ -5,80 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
+
+    <!-- link CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Head -->
-    <h1>Meu Portifólio</h1>
-    <hr>
-    
+    <!-- Top -->
+    <div class="topDiv" id="home">
+        <div class="topText">
+            <span>
+                Olá, me chamo <span class="topTextColored">Matheus Nascimento</span>.
+                <br>
+                Sou estudante de desenvolvimento web na Trybe.
+            </span>
+        </div>
+        <img src="https://avatars.githubusercontent.com/u/100846027?v=4" alt="minha foto" class="topImage">
+        <hr>
+    </div>
+
     <!-- Indice -->
-    <h2>Matheus Francisco Nascimento</h2>
-    <img src="https://avatars.githubusercontent.com/u/100846027?v=4" alt="minha foto" width="300px" id="minhaFoto">
-    <h3>Índice</h3>
-    <ul>
-        <li>
-            <a href="#sobreMim">Sobre Mim</a>
-        </li>
-        <li>
-            <a href="#curiosidades">Curiosidades</a>
-        </li>
-        <li>
-            <a href="#redesSociais">Redes Sociais</a>
-        </li>
-    </ul>
-    <hr>
+    <div class="index">
+        <div>
+            <a href="#home" class="indexText">HOME</a>
+            <a href="#sobre" class="indexText">SOBRE</a>
+            <a href="#portifolio" class="indexText">PORTIFOLIO</a>
+            <a href="#redesSociais" class="indexText">REDES SOCIAIS</a>
+        </div>
+    </div>
     
-    <!-- Sobre Mim -->
-    <h3 id="sobreMim">Sobre mim</h3>
-    <p>
-        Sou um jovem brasileiro de 18 anos nascido em São João del-Rei. Sempre foi apaixonado em Tecnológia e em buscar soluções práticas através dela. Atualmente estou estudando desenvolvimento Web na Trybe, logo após ter terminado meu ensino médio. Acredito e almejo em ser capaz de desevolver soluções criativas para facilitar o dia a dia das pessoas.
-    </p>
-    <hr>
+    <!-- Sobre -->
+    <div>
+        <h3 class="header" id="sobre">SOBRE</h3>
+        <div class="header-bar"></div>
+        <p>
+            Sou um jovem brasileiro de 18 anos nascido em São João del-Rei. Sempre foi apaixonado em Tecnológia e em buscar soluções práticas através dela. Atualmente estou estudando desenvolvimento Web na Trybe, logo após ter terminado meu ensino médio. Acredito e almejo em ser capaz de desevolver soluções criativas para facilitar o dia a dia das pessoas.
+        </p>
+    </div>
 
     <!-- Curiosidades -->
-    <h3 id="curiosidades">Curiosidades:</h3>
-    <ul>
-        <li>
-            Sempre fui apaixonado por luta, treino desde os 8 anos. Já treinei: Judo, Teakwondo, MuayThai e Jiu Jitsu.
-        </li>
-        <li>
-            Joguei vôlei no ensino médio. Indo para um campeonato dos colégios da PUC.
-        </li>
-        <li>
-            Gosto muito de jogar jogos competitivos online, principalmente Valorant e CS:GO
-        </li>
-        <li>
-        <strong>
-            A progamação entrou na minha vida quando era mais novo, passando pelo desenvolvimento de jogos, mundo maker e agora estou estudando desenvolvimento web
-        </strong>
-        </li>
-        <li>
-            Consigo me comunicar bem em inglês e espanhol.
-        </li>
-    </ul>
-    <hr>
+    <div>
+        <h3 class="header" id="portifolio">PROJETOS</h3>
+        <div class="header-bar"></div>
+        <ul>
+            <li>
+                Sempre fui apaixonado por luta, treino desde os 8 anos. Já treinei: Judo, Teakwondo, MuayThai e Jiu Jitsu.
+            </li>
+            <li>
+                Joguei vôlei no ensino médio. Indo para um campeonato dos colégios da PUC.
+            </li>
+            <li>
+                Gosto muito de jogar jogos competitivos online, principalmente Valorant e CS:GO
+            </li>
+            <li>
+            <strong>
+                A progamação entrou na minha vida quando era mais novo, passando pelo desenvolvimento de jogos, mundo maker e agora estou estudando desenvolvimento web
+            </strong>
+            </li>
+            <li>
+                Consigo me comunicar bem em inglês e espanhol.
+            </li>
+        </ul>
+    </div>
 
     <!-- Redes Sociais -->
-    <h3 id="redesSociais">Redes Sociais</h3>
-    <ul>
-        <li>
-            <a href="https://www.instagram.com/fnmatheus_/?hl=en" target="_blank">Instagram</a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/fnmatheus/" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-            <a href="https://github.com/fnmatheus" target="_blank">GitHub</a>
-        </li>
-        <li>
-            <a href="https://twitter.com/fnmatheus_" target="_blank">Twitter</a>
-        </li>
-    </ul>
-    <hr>
-
-    <!-- Page Footer -->
-    <a href="#minhaFoto">Minha Foto</a>
-    <br>
-    <a href="https://diolinux.com.br/autor/blogdiolinux" target="_blank">Um Blog que gosto (DioLinux)</a>
+    <div class="footer">
+        <h3 id="contacts">REDES SOCIAIS</h3>
+        <div class="header-bar"></div>
+        <div>
+            <a href="https://www.linkedin.com/in/fnmatheus/" target="_blank"><img src="/icons/linkedin.png" class="socialmidia-icons" alt="linkedin logo"></a>
+            <a href="https://github.com/fnmatheus" target="_blank"><img src="/icons/github.png" class="socialmidia-icons" alt="github logo"></a>
+            <a href="https://www.instagram.com/fnmatheus_/?hl=en" target="_blank"><img src="/icons/insta.png" class="socialmidia-icons" alt="instagram logo"></a>
+            <a href="https://twitter.com/fnmatheus_" target="_blank"><img src="/icons/twitter.png" class="socialmidia-icons" alt="twitter logo"></a>
+        </div>
+    </div>
 </body>
 </html>
