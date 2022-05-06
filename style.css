@@ -10,7 +10,7 @@ body{
 }
 .topText{
     /* position config */
-    padding-top: 20px;
+    padding-top: 10px;
     /* text config */
     color: white;
     text-align: center;
@@ -31,8 +31,8 @@ body{
 .index{
     background-color: black;
     padding-left: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .indexText{
     text-align: center;
