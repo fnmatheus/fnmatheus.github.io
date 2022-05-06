@@ -50,13 +50,18 @@ body{
     background-color: #444649;
     width: 75px;
     height: 5px;
-    
 }
 .footer{
     background-color: black;
     text-align: center;
     font-size: 25pt;
     color: #fff;
+    padding: 20px;
+}
+.footer-bar{
+    background-color: #fff;
+    width: 75px;
+    height: 5px;
 }
 .socialmidia-icons{
     width: 40px;
