@@ -31,40 +31,65 @@ body{
 }
 .index{
     background-color: black;
-    padding-left: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
 .indexText{
     text-align: center;
     text-decoration: none;
     font-weight: bolder;
+    font-size: 20px;
     color: white;
-    padding-right: 20px;
+}
+.titleOrganize{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    
 }
 .header{
-    text-align: center;
     font-size: 25pt;
     color: #444649;
+    height: 10px;
 }
 .header-bar{
     background-color: #444649;
     width: 75px;
     height: 5px;
 }
-.footer{
+.bgAbout{
     background-color: black;
-    text-align: center;
+    width: 100%;
+}
+.footer{
     font-size: 25pt;
     color: #fff;
-    padding: 20px;
+    height: 10px;
 }
 .footer-bar{
     background-color: #fff;
     width: 75px;
     height: 5px;
 }
+.iconOrganize{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 40px;
+}
 .socialmidia-icons{
     width: 40px;
-    padding-right: 40px;
 }
