@@ -118,8 +118,43 @@ a:hover, socialmidia-icons:hover{
     padding: 3%;
 }
 .projects{
+    width: 95%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projects-category{
+    height: 100px;
     width: 100%;
-    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.fillter{
+    height: 30px;
+    font-size: 25px;
+    font-weight: 600;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fillter:hover{
+    background-color: rgb(177, 3, 162);
+    color: #fff;
+}
+.project{
+    width: 30%;
+    height: 200px;
 
     outline-style: solid;
     outline-width: 1px;
