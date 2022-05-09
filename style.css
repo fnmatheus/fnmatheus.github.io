@@ -23,19 +23,21 @@ body{
 .topDiv{
     background-color: rgb(19, 19, 19);
     height: 100vh;
-    padding: 10px;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
+
+    gap: 10%;
 }
 .topText{
     color: white;
     text-align: center;
-    width: 70%;
-    font-size: 350%;
+    width: 50%;
+    font-size: 200%;
 
     display: flex;
     flex-direction: column;
@@ -45,8 +47,13 @@ body{
     color: rgb(177, 3, 162);
     font-weight: 900;
 }
+.topImageDiv{
+
+    display: flex;
+    align-items: center;
+}
 .topImage{
-    width: 400px;
+    height: 100%;
     border-radius: 100%;
 }
 .index{
