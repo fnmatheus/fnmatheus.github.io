@@ -47,11 +47,6 @@ body{
     color: rgb(177, 3, 162);
     font-weight: 900;
 }
-.topImageDiv{
-
-    display: flex;
-    align-items: center;
-}
 .topImage{
     height: 100%;
     border-radius: 100%;
