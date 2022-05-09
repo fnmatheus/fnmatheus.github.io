@@ -8,14 +8,14 @@ a:hover, socialmidia-icons:hover{
     filter: grayscale(100%) brightness(40%) sepia(90%) hue-rotate(-100deg) saturate(1000%) contrast(1);
 }
 .button{
-    outline-style: solid;
-    outline-width: 1px;
+    border: 1px solid;
     color: #fff;
     width: 40%;
     height: 7%;
 
     text-decoration: none;
     font-size: 55%;
+    font-weight: 550;
 
     display: flex;
     justify-content: center;
