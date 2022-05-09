@@ -4,6 +4,9 @@ body{
     height: 100%;
     width: 100%;
 }
+a:hover{
+    color : rgb(177, 3, 162);
+}
 .button{
     outline-style: solid;
     outline-width: 1px;
