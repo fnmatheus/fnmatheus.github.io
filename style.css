@@ -8,13 +8,13 @@ body{
     outline-style: solid;
     outline-width: 1px;
     color: #fff;
-    width: 100%;
-    height: 40%;
+    width: 50%;
+    height: 10%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
 }
 .buttonText{
     color: #fff;
@@ -31,8 +31,7 @@ body{
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-
-    gap: 2%;
+    gap: 10%;
 }
 .topText{
     color: white;
@@ -42,28 +41,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-content: center;
+    
 }
 .topTextColored{
     color: rgb(177, 3, 162);
     font-weight: 900;
 }
 .topImage{
-    width: 85%;
+    width: 20%;
     border-radius: 100%;
 }
 .index{
     background-color: black;
-    padding: 20px;
+    padding: 2%;
     
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    align-items: center;
+    gap: 5%;
 }
 .indexText{
-    text-align: center;
     text-decoration: none;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 100%;
     color: white;
 }
 .titleOrganize{
