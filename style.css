@@ -4,9 +4,11 @@ body{
     height: 100%;
     width: 100%;
 }
+
 a:hover, socialmidia-icons:hover{
     filter: grayscale(100%) brightness(40%) sepia(90%) hue-rotate(-100deg) saturate(1000%) contrast(1);
 }
+
 .button{
     border: 1px solid;
     color: #fff;
@@ -22,6 +24,7 @@ a:hover, socialmidia-icons:hover{
     align-items: center;
     padding: 1%;
 }
+
 .topDiv{
     background-color: rgb(19, 19, 19);
     height: 100vh;
@@ -34,6 +37,7 @@ a:hover, socialmidia-icons:hover{
     flex-wrap: wrap;
     gap: 10%;
 }
+
 .topText{
     color: white;
     text-align: center;
@@ -46,14 +50,17 @@ a:hover, socialmidia-icons:hover{
     align-content: center;
     
 }
+
 .topTextColored{
     color: rgb(177, 3, 162);
     font-weight: 900;
 }
+
 .topImage{
     width: 300px;
     border-radius: 100%;
 }
+
 .index{
     background-color: black;
     height: 52px;
@@ -66,12 +73,14 @@ a:hover, socialmidia-icons:hover{
 
     gap: 3%;
 }
+
 .indexText{
     text-decoration: none;
     font-weight: bolder;
     font-size: 100%;
     color: white;
 }
+
 .titleOrganize{
     width: 100%;
 
@@ -82,16 +91,19 @@ a:hover, socialmidia-icons:hover{
     padding-bottom: 40px;
     
 }
+
 .header{
     font-size: 25pt;
     color: #444649;
     height: 10px;
 }
+
 .header-bar{
     background-color: #444649;
     width: 75px;
     height: 5px;
 }
+
 #aboutContent{
     display: flex;
     flex-direction: row;
@@ -101,13 +113,16 @@ a:hover, socialmidia-icons:hover{
     padding: 20px;
     gap: 40px;
 }
+
 #aboutPhoto{
     width: 250px;
 }
+
 #aboutText{
     width: 70%;
     font-size: 150%;
 }
+
 .portifolio{
     display: flex;
     flex-direction: column;
@@ -117,6 +132,37 @@ a:hover, socialmidia-icons:hover{
 
     padding: 3%;
 }
+
+.projects-category{
+    padding: 4%;
+    width: 80%;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+.fillter{
+    height: 180%;
+    width: 100%;
+    font-size: 100%;
+    font-weight: 600;
+    padding: 1%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    background-color: rgb(177, 3, 162);
+    color: #fff;
+}
+
 .projects{
     width: 95%;
     height: auto;
@@ -126,53 +172,39 @@ a:hover, socialmidia-icons:hover{
     flex-flow: row;
     justify-content: center;
     flex-wrap: wrap;
-}
-.projects-category{
-    height: 100px;
-    width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 2%;
 }
-.fillter{
-    height: 30px;
-    font-size: 25px;
-    font-weight: 600;
 
-    padding-left: 25px;
-    padding-right: 25px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fillter:hover{
-    background-color: rgb(177, 3, 162);
-    color: #fff;
-}
 .project{
     width: 30%;
-    height: 200px;
 
-    outline-style: solid;
-    outline-width: 1px;
-    color: #444649;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
 }
+
+.project-image{
+    width: 100%;
+}
+
 .bgSocialMidia{
     background-color: black;
 }
+
 .footer{
     font-size: 25pt;
     color: #fff;
     height: 10px;
 }
+
 .footer-bar{
     background-color: #fff;
     width: 75px;
     height: 5px;
 }
+
 .iconOrganize{
     width: 100%;
 
@@ -184,6 +216,7 @@ a:hover, socialmidia-icons:hover{
     gap: 40px;
     padding-bottom: 40px;
 }
+
 .socialmidia-icons{
     width: 40px;
 }
