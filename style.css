@@ -56,12 +56,13 @@ a:hover, socialmidia-icons:hover{
 }
 .index{
     background-color: black;
-    padding: 1.5%;
+    height: 52px;
     
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 5%;
 
     gap: 3%;
 }
