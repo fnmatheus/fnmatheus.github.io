@@ -265,6 +265,8 @@ nav{
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
+
+        display: none;
     }
 
     nav{
