@@ -210,60 +210,6 @@ nav{
     display: flex;
 }
 
-.project-about{
-    width: 50vh;
-    height: 30vh;
-
-    background: rgb(243, 243, 243);
-    color: black;
-
-    position: absolute;
-    z-index: 1;
-
-    font-weight: 600;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-name{
-    font-size: 3vh;
-    font-weight: 900;
-
-    margin: 0;
-}
-
-.project-subject{
-    font-size: 2vh;
-    color: rgb(177, 3, 162);
-
-    margin: 0;
-}
-
-.project-button{
-    margin-top: 3vh;
-
-    border: 1px solid rgb(177, 3, 162);
-    color: #fff;
-    width: 50%;
-    height: 20%;
-
-    color: black;
-
-    text-decoration: none;
-    font-size: 100%;
-    font-weight: 600;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5%;
-
-    transition: 0.3s;
-}
-
 .project-image{
     width: 100%;
     
@@ -274,17 +220,21 @@ nav{
     z-index: 0;
 }
 
-.bgSocialMidia{
+.footer{
     background-color: black;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer{
+.socialmidia-title{
     font-size: 25pt;
-    color: #fff;
     height: 10px;
 }
 
-.footer-bar{
+.socialmidia-bar{
     background-color: #fff;
     width: 75px;
     height: 5px;
@@ -304,6 +254,10 @@ nav{
 
 .socialmidia-icons{
     width: 40px;
+}
+
+#creator{
+    font-size: 10pt;
 }
 
 @media (max-width: 1021px) {
