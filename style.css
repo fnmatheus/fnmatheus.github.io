@@ -199,15 +199,11 @@ nav{
     flex-flow: row;
     justify-content: center;
     flex-wrap: wrap;
-
-    gap: 2%;
 }
 
 .project{
     width: 50vh;
     height: 30vh;
-
-    margin: 1vh;
 
     cursor: pointer;
 
@@ -362,8 +358,6 @@ nav{
         flex-flow: row;
         justify-content: center;
         flex-wrap: wrap;
-    
-        gap: 2%;
     }
     
     .project{
