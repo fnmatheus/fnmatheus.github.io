@@ -40,7 +40,6 @@ footer img {
 }
 
 #projects {
-  height: 60vh;
   background: rgb(241, 241, 241);
 }
 
@@ -68,7 +67,7 @@ footer img {
 }
 
 .filter-item {
-  width: 50px;
+  width: 90px;
   text-align: center;
 }
 
@@ -77,6 +76,18 @@ footer img {
   background-color: rgb(192, 191, 191);
   color: white;
   cursor: pointer;
+}
+
+#projects-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 200px;
+  height: 120px;
+  background-size: 100%;
 }
 
 @media screen and (min-width: 758px) {
@@ -90,10 +101,15 @@ footer img {
     gap: 3vh;
   }
   .filter-item {
-    width: 100px;
+    width: 125px;
     font-size: x-large;
   }
   footer img {
     width: 40px;
+  }
+  .project {
+    width: 350px;
+    height: 200px;
+    background-size: 100%;
   }
 }
