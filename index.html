@@ -1,98 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifólio</title>
-  <!-- link CSS -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- link fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <title>fnmatheus</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- CSS nativo -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Top -->
-  <section class="topDiv" id="home">
-    <img src="https://avatars.githubusercontent.com/u/100846027?v=4" class="topImage" alt="minha foto">
-    <div class="topText">
-      <p>
-        Olá, me chamo <span class="topTextColored">Matheus Nascimento</span>.
-        <br>
-        Sou estudante de Desenvolvimento Web na Trybe.
-      </p>
-      <a href="#nav-bar" class="button">
-        Veja meu Trabalho
-      </a>
-    </div>
-  </section>
-
-  <!-- Nav-bar -->
-  <header id="nav-bar">
-    <nav>
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-list">
-        <li><a href="#home" class="indexText">HOME</a></li>
-        <li><a href="#sobre" class="indexText">SOBRE</a></li>
-        <li><a href="#portifolio" class="indexText">PORTIFOLIO</a></li>
-        <li><a href="#redesSociais" class="indexText">REDES SOCIAIS</a></li>
-      </ul>
-    </nav>
-  </header>
-  
   <main>
-    <!-- Sobre -->
-    <section>
-      <div class="titleOrganize">
-        <h3 class="header" id="sobre">SOBRE</h3>
-        <div class="header-bar"></div>
+    <nav id="navbar" class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">fnmatheus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <article id="aboutContent">
-        <img src="/images/terno.jpeg" id="aboutPhoto" alt="foto do Matheus">
-        <p id="aboutText">
-          Sou um jovem brasileiro nascido em São João del-Rei - Minas Gerais. Minha jornada no mundo de desenvolvimento começou quando tive meu primeiro contato aprendendo a desenvolver jogos no começo da adolescência. Atualmente estou estudando desenvolvimento Web na Trybe, para adquirir conhecimento e trabalhar na área. Estou super epanhado e ânimado para essa nova jornada.
-        </p>
-      </article>
+    </nav>
+    <section id="about" class="display-flex">
+      <h1>ABOUT</h1>
+      <div class="title-datail"></div>
     </section>
-    <!-- Portifolio -->
-    <section class="portifolio">
-      <div class="titleOrganize">
-        <h3 class="header" id="portifolio">PROJETOS</h3>
-        <div class="header-bar"></div>
-      </div>
-      <div class="projects-category">
-        <div class="fillter active">
-          TODOS
-        </div>
-      </div>
-      <div class="projects">
-        <div class="project">
-          <a href="https://github.com/fnmatheus/trybe-projetos/tree/lessons-learned" target="_blank"><img src="/images/lessons-learned.png" class="project-image" alt="lessons-learned"></a>
-        </div>
-      </div>
+    <section id="projects" class="display-flex">
+      <h1>PROJECTS</h1>
+      <div class="title-datail"></div>
+      <ul id="projects-filters" class="filter"></ul>
     </section>
   </main>
-  
-  <footer class="footer">
-    <!-- Redes Sociais -->
-    <section>
-      <div class="titleOrganize">
-        <h3 class="socialmidia-title" id="redesSociais">REDES SOCIAIS</h3>
-        <div class="socialmidia-bar"></div>
-      </div>
-      <div class="iconOrganize">
-        <a href="https://www.linkedin.com/in/fnmatheus/" target="_blank"><img src="/icons/linkedin.png" class="socialmidia-icons" alt="linkedin logo"></a>
-        <a href="https://github.com/fnmatheus" target="_blank"><img src="/icons/github.png" class="socialmidia-icons" alt="github logo"></a>
-        <a href="https://www.instagram.com/fnmatheus_/?hl=en" target="_blank"><img src="/icons/insta.png" class="socialmidia-icons" alt="instagram logo"></a>
-        <a href="https://twitter.com/fnmatheus_" target="_blank"><img src="/icons/twitter.png" class="socialmidia-icons" alt="twitter logo"></a>
-      </div>
-    </section>
-    <span id="creator"> MATHEUS NASCIMENTO <span class="topTextColored">©2022</span></span>
+  <footer>
+    <ul id="social-midias">
+      <li class="social-media">
+        <a href="https://www.linkedin.com/in/fnmatheus/" target="_blank"><img src="icons/linkedin.png" alt=""></a>
+      </li>
+      <li class="social-media">
+        <a href="https://github.com/fnmatheus" target="_blank"><img src="icons/github.png" alt=""></a>
+      </li>
+      <li class="social-media">
+        <a href="https://www.instagram.com/fnmatheus_" target="_blank"><img src="icons/insta.png" alt=""></a>
+      </li>
+      <li class="social-media">
+        <a href="https://twitter.com/fnmatheus_" target="_blank"><img src="icons/twitter.png" alt=""></a>
+      </li>
+    </ul>
+    <span>MATHEUS NASCIMENTO © 2022</span>
   </footer>
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
