@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+}
+
+/* Tags */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+header {
+  background-color: rgb(48, 0, 137);
+  font-family: Lobster Two, cursive;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: rgb(48, 0, 137);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+
+main {
+  margin: 4vh;
+}
+
+/* Pixel Board */
+#board-section {
+  margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+#pixel-board {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pixel {
+  border: 1px solid black;
+  background-color: white;
+}
+
+#previewImg {
+  position: absolute;
+}
+
+/* Color Palette */
+.color-proprietes {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#color-palette {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 0.5vh;
+}
+
+#palette-section {
+  margin-bottom: 10px;
+}
+
+#palette {
+  display: flex;
+  justify-content: center;
+  gap: 0.8vh;
+}
+
+#eraser {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+}
+
+/* Create Color */
+#chosseRGB {
+  position: absolute;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 8px;
+  z-index: 1;
+  width: 400px;
+  padding: 1vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  box-shadow: 10px 10px 10px gray;
+  visibility: hidden;
+}
+
+#rbg-inputs {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.input-group-text {
+  margin: 0;
+}
+
+#rgb-previous-color {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+#previous-color-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+#new-palette-color {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 0.5vh;
+}
+
+.input-group {
+  width: 30%;
+}
+
+#buttons-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 3vh;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixels Art</title>
+  <!-- Text Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- jQuery Functions -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/html2canvas.js"></script>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="display-5">Pixels Art</h1>
+  </header>
+  <main>
+    <section id="tools">
+      <section id="palette-section">
+        <h1 id="title" class="fs-4 text-center">Paleta de Cores</h1>
+        <section id="palette">
+          <section id="color-palette"></section>
+          <section id="new-palette-color"></section>
+          <div id="new-color-button" class="color-proprietes"><span>+</span></div>
+          <img src="assets/images/eraser.png" id="eraser">
+          <div id="chosseRGB">
+            <div id="button-close" class="btn-close"></div>
+            <div id="rbg-inputs" class="input-group">
+              <label class="form-label">Vermelho</label>
+              <input id="input-R" type="range" max="255" class="form-range" value="0">
+              <label class="form-label">Verde</label>
+              <input id="input-G" type="range" max="255" class="form-range" value="0">
+              <label class="form-label">Azul</label>
+              <input id="input-B" type="range" max="255" class="form-range" value="0">
+            </div>
+            <div id="previous-color-div">
+              <span>Exemplo da cor:</span>
+              <div id="rgb-previous-color"></div>
+            </div>
+            <button id="add-color" class="btn btn-success">Adicionar</button>
+          </div>
+        </section>
+      </section>
+      <section id="buttons-section">
+        <button id="clear-board" class="btn btn-danger">Limpar</button>
+        <div class="input-group">
+          <input type="number" min="1" placeholder="tamanho" id="board-size" class="form-control">
+          <button id="generate-board" class="input-group-text">VQV</button>
+        </div>
+      </section>
+    </section>
+    <section id="board-section">
+      <section id="pixel-board"></section>
+      <button id="download" class="btn btn-outline-dark">Savar Desenho</button>
+      <div id="previewImg" style="visibility: hidden;"></div>
+    </section>
+  </main>
+  <footer>
+    <span>MATHEUS NASCIMENTO ©2022</span>
+  </footer>
+  <!-- Link JS -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/downloadImage.js"></script>
+</body>
+</html>
