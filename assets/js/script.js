@@ -28,7 +28,7 @@ function projectOptionsInformation(projectOptions, project) {
 }
 
 function addProjects() {
-  const projects = [{name: 'Lessons Learned', imageName: 'lessons-learned', classes: 'project HTML/CSS'}];
+  const projects = [{name: 'Lessons Learned', imageName: 'lessons-learned', classes: 'project HTML/CSS'}, {name: 'Pixels Art', imageName: 'pixels-art', classes: 'project HTML/CSS JS'}];
   const projectsGroup = document.querySelector('#projects-group');
   for (let index = 0; index < projects.length; index += 1) {
     const project = document.createElement('div');
@@ -43,7 +43,7 @@ function addProjects() {
 }
 
 function filterItems() {
-  const items = ['ALL', 'HTML/CSS'];
+  const items = ['ALL', 'HTML/CSS', 'JS'];
   const projectsFilters = document.querySelector('#projects-filters');
   for (let index = 0; index < items.length; index += 1) {
     const newFilter = document.createElement('li');
