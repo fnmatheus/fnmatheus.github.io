@@ -5,15 +5,21 @@ function btnProject(clicked) {
     pasteName += currentProject[index].toLowerCase();
   }
   console.log(pasteName);
-  window.open(`url('projects-pages/${pasteName}/index.html')`);
+  window.open(`projects-pages/${pasteName}/index.html`);
 }
 
 function projectOptionsInformation(projectOptions, project) {
+  let hardSkillsArray = project.classes.split(' ');
+  hardSkillsArray.shift();
+  let hardSkills = ''
+  for (let index = 0; index < hardSkillsArray.length; index += 1) {
+    hardSkills += `${hardSkillsArray[index]} `;
+  }
   const projectName = document.createElement('h1');
   projectName.innerText = project.name;
   projectOptions.appendChild(projectName);
   const projectFilters = document.createElement('p');
-  projectFilters.innerText = project.classes;
+  projectFilters.innerText = hardSkills;
   projectOptions.appendChild(projectFilters);
   const projectButton = document.createElement('button');
   projectButton.innerText = 'Show More';
