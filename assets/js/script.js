@@ -4,8 +4,7 @@ function btnProject(clicked) {
   for (let index = 0; index < currentProject.length; index += 1) {
     pasteName += currentProject[index].toLowerCase();
   }
-  console.log(pasteName);
-  window.open(`projects-pages/${pasteName}/index.html`);
+  window.open(`assets/projects-pages/${pasteName}/index.html`);
 }
 
 function projectOptionsInformation(projectOptions, project) {
@@ -33,7 +32,7 @@ function addProjects() {
   const projectsGroup = document.querySelector('#projects-group');
   for (let index = 0; index < projects.length; index += 1) {
     const project = document.createElement('div');
-    project.style.backgroundImage = `url('images/${projects[index].imageName}.png')`;
+    project.style.backgroundImage = `url('assets/images/${projects[index].imageName}.png')`;
     project.className = projects[index].classes;
     projectsGroup.appendChild(project);
     const projectOptions = document.createElement('div');
