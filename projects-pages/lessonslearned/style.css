@@ -1,0 +1,192 @@
+body {
+  background-color: rgb(253, 251, 251);
+  margin: 0;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(61, 73, 92);
+}
+
+li {
+  list-style: none;
+}
+
+#text-in-green {
+  color: rgb(47, 193, 140);
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  background-color: white;
+  border-bottom: 1px solid rgb(61, 73, 92);
+  color: rgb(61, 73, 92);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#img-cacalho {
+  height: 54px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#sobre-mim img {
+  border-radius: 100%;
+  width: 300px;
+}
+
+#cabecalho div img {
+  width: 54px;
+}
+
+footer section h1 {
+  font-size: 22pt;
+  margin: 10px;
+}
+
+.lado-esquerdo article h1 {
+  font-size: 20pt;
+  color: rgb(61, 73, 92);
+}
+
+#cabecalho h1 {
+  font-size: 22pt;
+}
+
+#cabecalho nav {
+  display: flex;
+  gap: 40px;
+  font-size: 14pt;
+  font-weight: 600;
+  width: 200px;
+}
+
+#cabecalho nav a {
+  border: 1px solid rgb(61, 73, 92);
+  width: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+#cabecalho nav a:hover {
+  background-color: rgb(61, 73, 92);
+  color: white;
+}
+
+#sobre-mim {
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+#sobre-mim p {
+  font-size: 25pt;
+  font-weight: 600;
+  color: rgb(61, 73, 92);
+  text-align: center;
+}
+
+#listas {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lista {
+  width: 310px;
+  text-align: center;
+  color: black;
+  font-size: 14pt;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.titulo-lista {
+  font-weight: 900;
+  font-size: 16pt;
+  margin-bottom: 20px;
+  color: rgb(61, 73, 92);
+}
+
+footer {
+  background-color: rgb(47, 193, 140);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+footer section {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sm-icon {
+  width: 50px;
+}
+
+#sm-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.lado-direito {
+  padding-top: 50px;
+}
+
+#box-aside {
+  border: 1px solid rgb(61, 73, 92);
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lado-esquerdo {
+  width: 90vh;
+  line-height: 30px;
+  font-size: 15pt;
+}
+
+#secao-artigo {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+}
+
+.anchor {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+#anchor-sobre {
+  top: 0;
+}
+
+#anchor-artigo {
+  width: 11px;
+  height: 10px;
+}

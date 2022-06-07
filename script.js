@@ -1,33 +1,25 @@
+function btnProject(clicked) {
+  const currentProject = clicked.target.parentNode.firstChild.innerText.split(' ');
+  let pasteName = '';
+  for (let index = 0; index < currentProject.length; index += 1) {
+    pasteName += currentProject[index].toLowerCase();
+  }
+  console.log(pasteName);
+  window.open(`url('projects-pages/${pasteName}/index.html')`);
+}
+
 function projectOptionsInformation(projectOptions, project) {
   const projectName = document.createElement('h1');
   projectName.innerText = project.name;
-  projectName.style.visibility = 'hidden';
   projectOptions.appendChild(projectName);
   const projectFilters = document.createElement('p');
   projectFilters.innerText = project.classes;
-  projectFilters.style.visibility = 'hidden';
   projectOptions.appendChild(projectFilters);
   const projectButton = document.createElement('button');
   projectButton.innerText = 'Show More';
-  projectButton.style.visibility = 'hidden';
   projectButton.className = 'btn btn-outline-dark';
+  projectButton.addEventListener('click', btnProject);
   projectOptions.appendChild(projectButton);
-}
-
-function hiddenProjectDatails(project) {
-  const projectOptions = project.target.firstChild;
-  projectOptions.style.height = '0';
-  for (let index = 0; index < projectOptions.children.length; index += 1) {
-    projectOptions.children[index].style.visibility = 'hidden';
-  }
-}
-
-function showProjectDatails(project) {
-  const projectOptions = project.target.firstChild;
-  projectOptions.style.height = '100%';
-  for (let index = 0; index < projectOptions.children.length; index += 1) {
-    projectOptions.children[index].style.visibility = 'visible';
-  }
 }
 
 function addProjects() {
@@ -37,8 +29,6 @@ function addProjects() {
     const project = document.createElement('div');
     project.style.backgroundImage = `url('images/${projects[index].imageName}.png')`;
     project.className = projects[index].classes;
-    project.addEventListener('mouseenter', showProjectDatails);
-    project.addEventListener('mouseleave', hiddenProjectDatails);
     projectsGroup.appendChild(project);
     const projectOptions = document.createElement('div');
     projectOptions.classList.add('project-options');
