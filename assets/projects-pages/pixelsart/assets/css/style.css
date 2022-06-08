@@ -4,6 +4,7 @@ body {
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
 header {
@@ -16,10 +17,6 @@ header {
   align-items: center;
 }
 
-main {
-  margin: 40px;
-}
-
 footer {
   background-color: rgb(48, 0, 137);
   color: white;
@@ -28,6 +25,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 140px;
+  width: 100%;
 }
 
 /* Pixel Board */
