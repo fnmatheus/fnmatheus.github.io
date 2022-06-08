@@ -30,6 +30,7 @@ footer img {
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 #about {
@@ -85,7 +86,9 @@ footer img {
 
 .project {
   position: relative;
-  width: 50%;
+  background-size: 100%;
+  width: 300px;
+  height: 150px;
 }
 
 .project-options {
@@ -126,8 +129,7 @@ footer img {
     width: 40px;
   }
   .project {
-    width: 350px;
-    height: 200px;
-    background-size: 100%;
+    width: 600px;
+    height: 300px;
   }
 }
