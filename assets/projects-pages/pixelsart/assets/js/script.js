@@ -13,10 +13,6 @@ function selectedColor(color) {
 }
 
 // New Color Opitions
-function closeNewColorOption() {
-  const chosseRGB = document.querySelector('#chosseRGB');
-  chosseRGB.style.visibility = 'hidden';
-}
 
 function addNewColor() {
   const newColor = document.createElement('div');
@@ -38,9 +34,9 @@ function changePreviousColor() {
   rgbPreviousColor.style.backgroundColor = `rgb(${inputR}, ${inputG}, ${inputB})`;
 }
 
-function openNewColorOption() {
+function newColorOption() {
   const chosseRGB = document.querySelector('#chosseRGB');
-  chosseRGB.style.visibility = 'visible';
+  chosseRGB.style.visibility = (chosseRGB.style.visibility === 'visible') ? 'hidden' : 'visible';
   document.querySelector('#input-R').value = 0;
   document.querySelector('#input-G').value = 0;
   document.querySelector('#input-B').value = 0;
@@ -86,9 +82,7 @@ function randomColors() {
   while (colorsArray.length < 4) {
     const color = generateColor();
     const repeat = testRepeatition(colorsArray, color);
-    if (repeat === false) {
-      colorsArray.push(color);
-    }
+    if (repeat === false) colorsArray.push(color);
   }
   return colorsArray;
 }
@@ -145,11 +139,21 @@ function defineSize(value) {
 }
 
 function testChangeSizeValue(value) {
-  if (value < 5) {
-    return 5;
-  }
-  if (value > 50) {
-    return 50;
+  const screen = window.matchMedia('(min-width: 768px)');
+  if (screen.matches) {
+    if (value < 5) {
+      return 5;
+    }
+    if (value > 50) {
+      return 50;
+    }
+  } else {
+    if (value < 5) {
+      return 5;
+    }
+    if (value > 8) {
+      return 8;
+    }
   }
   return value;
 }
@@ -175,10 +179,22 @@ function clear() {
 }
 
 // On Load
+function createPaletteItems() {
+  createRandomColors();
+  document.querySelector('#clear-board').addEventListener('click', clear);
+  document.querySelector('#generate-board').addEventListener('click', changeSize);
+  const eraser = document.querySelector('#eraser');
+  eraser.addEventListener('click', selectedColor);
+  eraser.addEventListener('mouseover', onMouseoverPointer);
+  const newcolor = document.querySelector('#new-color-button');
+  newcolor.addEventListener('click', newColorOption);
+  newcolor.addEventListener('mouseover', onMouseoverPointer);
+}
+
 function createNewColor() {
   const buttonClose = document.querySelector('#button-close');
   buttonClose.addEventListener('mouseover', onMouseoverPointer);
-  buttonClose.addEventListener('click', closeNewColorOption);
+  buttonClose.addEventListener('click', newColorOption);
   const inputR = document.querySelector('#input-R');
   const inputG = document.querySelector('#input-G');
   const inputB = document.querySelector('#input-B');
@@ -189,19 +205,9 @@ function createNewColor() {
   addColor.addEventListener('click', addNewColor);
 }
 
-function doItOnLoad() {
+window.onload = () => {
   defineSize(5);
   paint();
-  createRandomColors();
-  document.querySelector('#clear-board').addEventListener('click', clear);
-  document.querySelector('#generate-board').addEventListener('click', changeSize);
-  const eraser = document.querySelector('#eraser');
-  eraser.addEventListener('click', selectedColor);
-  eraser.addEventListener('mouseover', onMouseoverPointer);
-  const newcolor = document.querySelector('#new-color-button');
-  newcolor.addEventListener('click', openNewColorOption);
-  newcolor.addEventListener('mouseover', onMouseoverPointer);
+  createPaletteItems();
   createNewColor();
 }
-
-window.onload = doItOnLoad;

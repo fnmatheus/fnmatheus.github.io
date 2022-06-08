@@ -53,9 +53,7 @@ function filterItems() {
   }
 }
 
-function startFunction() {
+window.onload = () => {
   filterItems();
   addProjects();
 }
-
-window.onload = startFunction;
