@@ -21,7 +21,7 @@ function projectOptionsInformation(projectOptions, project) {
   projectFilters.innerText = hardSkills;
   projectOptions.appendChild(projectFilters);
   const projectButton = document.createElement('button');
-  projectButton.innerText = 'Show More';
+  projectButton.innerText = 'Veja Mais';
   projectButton.className = 'btn btn-outline-dark';
   projectButton.addEventListener('click', btnProject);
   projectOptions.appendChild(projectButton);
@@ -43,7 +43,7 @@ function addProjects() {
 }
 
 function filterItems() {
-  const items = ['ALL', 'HTML/CSS', 'JS'];
+  const items = ['TODOS', 'HTML/CSS', 'JS'];
   const projectsFilters = document.querySelector('#projects-filters');
   for (let index = 0; index < items.length; index += 1) {
     const newFilter = document.createElement('li');
