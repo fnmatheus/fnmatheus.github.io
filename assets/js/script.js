@@ -1,40 +1,59 @@
-function addDateOptions() {
-  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',];
-  const monthsSelection = document.getElementById('month');
-  for (let index of months) {
-    const monthOption = document.createElement('option');
-    monthOption.value = `${monthsSelection.children.length + 1}`;
-    monthOption.innerText = index;
-    monthsSelection.appendChild(monthOption);
+function btnProject(clicked) {
+  const currentProject = clicked.target.parentNode.firstChild.innerText.split(' ');
+  let pasteName = '';
+  for (let index = 0; index < currentProject.length; index += 1) {
+    pasteName += currentProject[index].toLowerCase();
   }
-  const yearsSelection = document.getElementById('year');
-  for (let year = new Date().getFullYear(); year >= 1905; year -= 1) {
-    const yearOption = document.createElement('option');
-    yearOption.value = `${yearsSelection.children.length + 1}`;
-    yearOption.innerText = year;
-    yearsSelection.appendChild(yearOption);
+  window.replace(`assets/projects-pages/${pasteName}/index.html`);
+}
+
+function projectOptionsInformation(projectOptions, project) {
+  let hardSkillsArray = project.classes.split(' ');
+  hardSkillsArray.shift();
+  let hardSkills = ''
+  for (let index = 0; index < hardSkillsArray.length; index += 1) {
+    hardSkills += `${hardSkillsArray[index]} `;
+  }
+  const projectName = document.createElement('h1');
+  projectName.innerText = project.name;
+  projectOptions.appendChild(projectName);
+  const projectFilters = document.createElement('p');
+  projectFilters.innerText = hardSkills;
+  projectOptions.appendChild(projectFilters);
+  const projectButton = document.createElement('button');
+  projectButton.innerText = 'Veja Mais';
+  projectButton.className = 'btn btn-outline-dark';
+  projectButton.addEventListener('click', btnProject);
+  projectOptions.appendChild(projectButton);
+}
+
+function addProjects() {
+  const projects = [{name: 'Lessons Learned', imageName: 'lessons-learned', classes: 'project HTML/CSS'}, {name: 'Pixels Art', imageName: 'pixels-art', classes: 'project HTML/CSS JS'}];
+  const projectsGroup = document.querySelector('#projects-group');
+  for (let index = 0; index < projects.length; index += 1) {
+    const project = document.createElement('div');
+    project.style.backgroundImage = `url('assets/images/${projects[index].imageName}.png')`;
+    project.className = projects[index].classes;
+    projectsGroup.appendChild(project);
+    const projectOptions = document.createElement('div');
+    projectOptions.classList.add('project-options');
+    project.appendChild(projectOptions);
+    projectOptionsInformation(projectOptions, projects[index]);
   }
 }
 
-function changeScreens(tag) {
-  const login = document.getElementById('login');
-  const register = document.getElementById('register');
-  const button = tag.target;
-  if (login.style.display === 'none') {
-    button.className = 'btn btn-success';
-    button.innerText = 'Create new account';
-    login.style.display = 'flex';
-    register.style.display = 'none';
-  } else {
-    button.className = 'btn btn-danger';
-    button.innerText = 'Cancel';
-    login.style.display = 'none';
-    register.style.display = 'flex';
+function filterItems() {
+  const items = ['TODOS', 'HTML/CSS', 'JS'];
+  const projectsFilters = document.querySelector('#projects-filters');
+  for (let index = 0; index < items.length; index += 1) {
+    const newFilter = document.createElement('li');
+    newFilter.classList.add('filter-item');
+    newFilter.innerText = items[index];
+    projectsFilters.appendChild(newFilter);
   }
 }
 
 window.onload = () => {
-  addDateOptions();
-  const newAccount = document.getElementById('change-button');
-  newAccount.addEventListener('click', changeScreens);
-};
+  filterItems();
+  addProjects();
+}
