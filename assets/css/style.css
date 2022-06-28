@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: rgb(203, 80, 255);
+  color: rgb(149, 44, 255);
 }
 
 header {
@@ -26,6 +26,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 4vh;
+  box-shadow: 0px 0px 20px black;
 }
 
 header img {
@@ -116,6 +117,7 @@ footer {
   padding-left: 6vh;
   padding-right: 6vh;
   align-items: center;
+  box-shadow: 0px 0px 20px black;
 }
 
 footer img {
@@ -131,6 +133,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 25vh;
+}
+
+#home-detail {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 90vh 60vh 0;
+  border-color: transparent rgb(149, 44, 255) transparent transparent;
 }
 
 #home-div {
@@ -145,15 +160,22 @@ main {
 }
 
 #home-text p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 #home-text h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 
 #home-links {
   display: flex;
   gap: 2vh;
-  font-size: 2rem;
+  font-size: 2.6rem;
+}
+
+#overview-home {
+  width: 60vh;
+  height: 70vh;
+  background-color: rgb(40, 39, 39);
+  box-shadow: -5px 5px 20px black;
 }
