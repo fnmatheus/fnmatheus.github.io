@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Pixels Arts",
+    "filters": "HTML/CSS DOM/ES6",
+    "file-name": "pixelsart",
+    "image-name": "pixels-art.png"
+  },
+  {
+    "name": "Lessons Learned",
+    "filters": "HTML/CSS",
+    "file-name": "lessonslearned",
+    "image-name": "lessons-learned.png"
+  }
+]
