@@ -28,18 +28,18 @@
         <li><a href="">home</a></li>
         <li><a href="">sobre mim</a></li>
         <li><a href="">projetos</a></li>
-        <li><a href="">contatos</a></li>
       </ul>
     </nav>
     <label class="switch">
-      <input type="checkbox">
+      <input type="checkbox" checked>
       <span class="slider round"></span>
     </label>
   </header>
   <main>
     <section id="home">
       <div id="home-div">
-        <div id="home-detail"></div>
+        <img id="home-upper-detail" src="assets/images/triangle-upper.svg" alt="">
+        <img id="home-down-detail" src="assets/images/triangle-down.svg" alt="">
         <div id="home-text">
           <p>Oi, eu sou</p>
           <h1>MATHEUS NASCIMENTO.</h1>
@@ -52,12 +52,19 @@
           <a href="https://twitter.com/fnmatheus_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
       </div>
-      <aside id="overview-home"></aside>
+      <button id="home-button" class="btn btn-outline-light">saiba mais!</button>
     </section>
-    <section id="about-me">
+    <section id="about"></section>
+    <section id="projects">
+      <h1>PROJETOS</h1>
+      <div id="projects-div">
+        <ul id="projects-filter">
+          <li><button>HTML/CSS</button></li>
+          <li><button>DOM/ES6</button></li>
+        </ul>
+        <div id="projects-list"></div>
+      </div>
     </section>
-    <section id="projects"></section>
-    <section id="contact"></section>
   </main>
   <footer>
     <img src="assets/images/logo-white.svg" alt="fnmatheus-logo">

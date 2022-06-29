@@ -23,9 +23,8 @@ header {
   background-color: rgb(40, 39, 39);
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 4vh;
   box-shadow: 0px 0px 20px black;
 }
 
@@ -131,21 +130,24 @@ main {
 #home {
   height: 98vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25vh;
+  gap: 5vh;
 }
 
-#home-detail {
-  position: absolute;
+#home-upper-detail {
   z-index: -1;
-  right: 0;
+  position: absolute;
   top: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 90vh 60vh 0;
-  border-color: transparent rgb(149, 44, 255) transparent transparent;
+  right: 0;
+}
+
+#home-down-detail {
+  z-index: -1;
+  position: absolute;
+  bottom: 1.78vh;
+  left: 0;
 }
 
 #home-div {
@@ -169,13 +171,60 @@ main {
 
 #home-links {
   display: flex;
-  gap: 2vh;
+  width: 100%;
   font-size: 2.6rem;
+  padding: 0 8vh 0 8vh;
+  justify-content: space-around;
 }
 
-#overview-home {
-  width: 60vh;
-  height: 70vh;
+#home-button {
+  width: 20vh;
+  height: 5vh;
+  font-size: 1.2rem;
+}
+
+#about {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+}
+
+#about {
+  height: 90vh;
+  width: 100%;
   background-color: rgb(40, 39, 39);
-  box-shadow: -5px 5px 20px black;
+  box-shadow: 0px 0px 20px black;
+}
+
+#projects {
+  height: 80vh;
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+}
+
+#projects h1 {
+  font-size: 3rem;
+}
+
+#projects-filter {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2vh;
+  font-size: 1.2rem;
+}
+
+#projects-filter button {
+  background-color: transparent;
+  border: transparent;
+  border-radius: 4px;
+  color: white;
+  width: 12vh;
+}
+
+#projects-filter button:hover {
+  background-color: rgb(149, 44, 255);
 }
