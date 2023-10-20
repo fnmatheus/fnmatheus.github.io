@@ -45,9 +45,8 @@ Tabela de conteúdos
 
 O layout da aplicação está disponível no Figma:
 
-<a href="https://www.figma.com/file/FF7Sa8JZZFZwZkCvsklmXH/Portifolio">
-  <img alt="Made by fnmatheus" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
-</a>
+
+**[Acessar Figma](https://www.figma.com/file/FF7Sa8JZZFZwZkCvsklmXH/Portifolio)**
 
 ### Mobile
 
