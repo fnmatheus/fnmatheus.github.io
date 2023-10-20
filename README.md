@@ -48,13 +48,13 @@ O layout da aplicação está disponível no Figma:
 ### Mobile
 
 <p align="center">
-  <img alt="MobilePhoto" src="" width="200px">
+  <img alt="MobilePhoto" src="./public/mobile.png" width="200px">
 </p>
 
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="WebPhoto" src="" width="400px">
+  <img alt="WebPhoto" src="./public/web.png" width="400px">
 </p>
 
 ---
