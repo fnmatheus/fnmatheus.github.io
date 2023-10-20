@@ -4,6 +4,10 @@
 <h1 align="center">👨‍💻 Portifolio</h1>
 <h2 align="center">Portifolio para expor projetos e habilidades</h2>
 
+<h4 align="center"> 
+	🚧  Portifolio 🚀 Em construção...  🚧
+</h4>
+
 Tabela de conteúdos
 =================
 <!--ts-->
@@ -41,7 +45,7 @@ Tabela de conteúdos
 
 O layout da aplicação está disponível no Figma:
 
-<a href="https://www.figma.com/file/FF7Sa8JZZFZwZkCvsklmXH/Portifolio?type=design&node-id=0%3A1&mode=design&t=An0K7vPbtmkrBksL-1">
+<a href="https://www.figma.com/file/FF7Sa8JZZFZwZkCvsklmXH/Portifolio">
   <img alt="Made by fnmatheus" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
@@ -56,5 +60,21 @@ O layout da aplicação está disponível no Figma:
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="WebPhoto" src="./public/web.png" width="400px">
 </p>
+
+---
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **Website**  ([Next.js](https://nextjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+
+#### **Utilitários**
+
+-   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Portifolio)](https://www.figma.com/file/FF7Sa8JZZFZwZkCvsklmXH/Portifolio)**
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+-   Ícones:  **[Hero Icons]()**,  **[Font Awesome](https://fontawesome.com/)**
+-   Fontes:  **[Amiko]()**,
+
 
 ---
