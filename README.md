@@ -73,7 +73,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 -   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Portifolio)](https://www.figma.com/file/FF7Sa8JZZFZwZkCvsklmXH/Portifolio)**
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
--   **[Font Awesome](https://fontawesome.com/)**
+-   Ícones:  **[Font Awesome](https://fontawesome.com/)**
 -   Fontes:  **[Amiko](https://fonts.google.com/specimen/Amiko)**,
 
 
