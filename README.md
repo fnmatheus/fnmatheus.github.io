@@ -77,3 +77,25 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 ---
+
+## 🙋‍♂️ Autor
+
+<a href="https://github.com/fnmatheus">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/100846027?v=4" width="100px;" alt=""/>
+ <br />
+ <p>Matheus Nascimento</p>
+ <br />
+</a>
+
+[![Linkedin Badge](https://img.shields.io/badge/-Matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fnmatheus/)](https://www.linkedin.com/in/fnmatheus/) 
+[![Gmail Badge](https://img.shields.io/badge/-nasc.matheusfrancisco@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nasc.matheusfrancisco@gmail.com)](mailto:nasc.matheusfrancisco@gmail.com)
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito por Matheus Nascimento 👋🏽 [Entre em contato!](https://www.linkedin.com/in/fnmatheus/)
+
+---
