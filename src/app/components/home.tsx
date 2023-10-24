@@ -6,12 +6,12 @@ import { Email, GitHub, LinkedIn } from './svgs/Index'
 export default function HomePage() {
   return (
     <section>
-      <div className="pt-16 flex flex-col h-screen justify-center items-center gap-8">
+      <div className="flex flex-col h-screen justify-center items-center gap-8">
         <div>
           <h1>Hello! I'm</h1>
           <h1>Matheus</h1>
         </div>
-        <p>
+        <p className="w-[321px] text-justify">
           Venha solucionar seus problemas com SITES, LANDING PAGES e muito mais!
         </p>
         <div className="flex flex-col gap-5">
