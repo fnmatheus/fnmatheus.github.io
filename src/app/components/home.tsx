@@ -7,9 +7,9 @@ export default function HomePage() {
   return (
     <section>
       <div className="flex flex-col h-screen justify-center items-center gap-8">
-        <div>
-          <h1>Hello! I'm</h1>
-          <h1>Matheus</h1>
+        <div className="text-5xl">
+          <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-l from-lightBlue to-purple">Hello! I'm</h1>
+          <h1 className="font-semibold">Matheus</h1>
         </div>
         <p className="w-[321px] text-justify">
           Venha solucionar seus problemas com SITES, LANDING PAGES e muito mais!
