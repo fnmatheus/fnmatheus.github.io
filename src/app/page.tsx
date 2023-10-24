@@ -1,15 +1,12 @@
 import Image from 'next/image'
 
-import Logo from './images/logo.svg'
-import Bars from './components/bars'
+import Navbar from './components/navbar'
 
 export default function Home() {
   return (
-    <main>
-        <Bars />
+    <main className="bg-darkGrey h-screen">
         <header>
-          <Image src={Logo} alt="logo" width={20} height={20} />
-          
+          <Navbar />
         </header>
     </main>
   )
