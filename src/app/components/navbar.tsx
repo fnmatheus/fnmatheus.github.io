@@ -10,10 +10,18 @@ export default function Navbar() {
 
   return (
     <section className="w-screen border-b border-lightGrey">
-      <div className="flex justify-between mx-5 h-[60px]">
+      <div className="flex justify-between items-center h-[60px] w-screen pl-5 pr-[7px]">
         <Image src={Logo} alt="logo" width={26} height={28.82} />
         <Hamburger toggled={isOpen} toggle={setOpen} rounded size={22} />
       </div>
+      {
+        isOpen &&
+        <div className="w-screen h-[163px] flex flex-col items-center justify-center gap-5 font-bold">
+          <button>Sobre mim</button>
+          <button>Projetos</button>
+          <button>Contate-me</button>
+        </div>
+      }
     </section>
   )
 }
