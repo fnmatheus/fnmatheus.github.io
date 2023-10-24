@@ -1,5 +1,7 @@
 import Image from 'next/image'
+
 import Photo from '../images/foto.webp'
+import { GitHub } from './svgs/Index'
 
 export default function HomePage() {
   return (
@@ -17,7 +19,9 @@ export default function HomePage() {
       </div>
       <Image src={Photo} alt="photo" />
       <div>
-        <a href=""></a>
+        <a href="">
+          <GitHub />
+        </a>
         <a href=""></a>
         <a href=""></a>
       </div>

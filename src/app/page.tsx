@@ -9,7 +9,7 @@ const amiko = Amiko({subsets: ['latin'], weight: ['400', '600', '700']})
 export default function Home() {
   return (
     <main className={amiko.className}>
-      <div className="bg-darkGrey h-screen">
+      <div className="bg-darkGrey h-screen text-white">
         <header>
           <Navbar />
           <HomePage />
