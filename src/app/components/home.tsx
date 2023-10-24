@@ -6,20 +6,20 @@ import { Email, GitHub, LinkedIn } from './svgs/Index'
 export default function HomePage() {
   return (
     <section>
-      <div className="flex flex-col h-screen justify-center items-center gap-8">
+      <div className="flex flex-col h-screen justify-center items-center gap-8 px-[34px]">
         <div className="text-5xl">
           <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-l from-lightBlue to-purple">Hello! I'm</h1>
           <h1 className="font-semibold">Matheus</h1>
         </div>
-        <p className="w-[321px] text-justify">
+        <p className="w-full text-center">
           Venha solucionar seus problemas com SITES, LANDING PAGES e muito mais!
         </p>
-        <div className="flex flex-col gap-5">
-          <button className="bg-gradient-to-l from-lightBlue to-purple w-[330px] h-[45px] rounded-full text-xl">
+        <div className="flex flex-col gap-5 w-full">
+          <button className="bg-gradient-to-l from-lightBlue to-purple w-full h-[45px] rounded-full text-xl">
             saiba mais!
           </button>
-          <button className="bg-gradient-to-l from-lightBlue to-purple w-[330px] h-[45px] rounded-full flex justify-center items-center">
-            <div className="w-[326px] h-[41px] rounded-full bg-darkGrey flex justify-center items-center text-xl">
+          <button className="bg-gradient-to-l from-lightBlue to-purple w-full h-[45px] rounded-full flex justify-center items-center px-[2px]">
+            <div className="w-full h-[41px] rounded-full bg-darkGrey flex justify-center items-center text-xl">
               contate-me
             </div>
           </button>
