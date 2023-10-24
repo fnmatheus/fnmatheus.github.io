@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setOpen] = useState(false)
 
   return (
-    <section className="w-screen border-b border-lightGrey">
+    <section className="w-screen border-b border-lightGrey fixed">
       <div className="flex justify-between items-center h-[60px] w-screen pl-5 pr-[7px]">
         <Image src={Logo} alt="logo" width={26} height={28.82} />
         <Hamburger toggled={isOpen} toggle={setOpen} rounded size={22} />
