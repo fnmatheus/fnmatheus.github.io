@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setOpen] = useState(false)
 
   return (
-    <section className="w-screen border-b border-lightGrey fixed z-40">
+    <header className="w-screen border-b border-lightGrey fixed z-40">
       <div className="flex justify-between items-center h-[60px] w-screen pl-5 pr-[10px]">
         {/* <Image src={Logo} alt="logo" width={26} height={28.82} /> */}
         <Logo className="text-[35px]" />
@@ -21,6 +21,6 @@ export default function Navbar() {
           <button>Contate-me</button>
         </div>
       }
-    </section>
+    </header>
   )
 }

@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 
-import Photo from '../images/foto.webp';
+import Photo from '../images/photo.webp';
 import { Email, GitHub, LinkedIn } from './svgs/Index';
 import { TypeAnimation } from 'react-type-animation';
 
