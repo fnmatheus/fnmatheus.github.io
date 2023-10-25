@@ -8,7 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 export default function HomePage() {
   return (
     <section>
-      <div className="flex flex-col h-screen justify-center items-center gap-8 px-[34px] pt-20 pb-4">
+      <div className="flex flex-col h-screen justify-center items-center gap-8 px-[34px] pt-20">
         <div className="text-5xl">
           <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-l from-lightBlue to-purple">{`Hello! I'm`}</h1>
           <TypeAnimation

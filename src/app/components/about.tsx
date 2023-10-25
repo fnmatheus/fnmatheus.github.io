@@ -5,7 +5,7 @@ import AboutList from './aboutList';
 
 export default function About() {
   return (
-    <section className="h-[784px] flex flex-col justify-center items-center px-[34px] gap-4">
+    <section className="flex flex-col justify-center items-center px-[34px] gap-4 pb-4">
       <Image src={Code} alt="about image" className="w-[300px] rounded-lg" />
       <section className="flex flex-col justify-center items-center gap-4">
         <h2 className="font-bold text-3xl">Sobre mim</h2>
