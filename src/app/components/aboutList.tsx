@@ -19,14 +19,23 @@ export default function AboutList() {
   };
 
   return (
-    <section>
-      <div>
-        <button id='skills' onClick={handleButton}>Skills</button>
-        <button id='studies' onClick={handleButton}>Estudos</button>
-        <button id='certificates' onClick={handleButton}>Certificados</button>
+    <section className="w-full flex flex-col gap-7">
+      <div className="w-full flex justify-between font-bold text-lg">
+        <button id='skills' onClick={handleButton} className="flex flex-col justify-center items-center">
+          Skills
+          <div className={`w-[40px] h-[3px] ${(list !== 0) ? 'bg-transparent' : 'bg-purple'} rounded-full`} />
+        </button>
+        <button id='studies' onClick={handleButton} className="flex flex-col justify-center items-center">
+          Estudos
+          <div className={`w-[40px] h-[3px] ${(list !== 1) ? 'bg-transparent' : 'bg-purple'} rounded-full`} />
+        </button>
+        <button id='certificates' onClick={handleButton} className="flex flex-col justify-center items-center">
+          Certificados
+          <div className={`w-[40px] h-[3px] ${(list !== 2) ? 'bg-transparent' : 'bg-purple'} rounded-full`} />
+        </button>
       </div>
-      <div>
-        <ul>
+      <div className="h-[180px]">
+        <ul className="list-inside list-disc">
           { 
             list == 0 &&
             skills.map(skill => <li>{ skill }</li>)
