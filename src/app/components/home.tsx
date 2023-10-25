@@ -1,9 +1,9 @@
 "use client"
-import Image from 'next/image'
+import Image from 'next/image';
 
-import Photo from '../images/foto.webp'
-import { Email, GitHub, LinkedIn } from './svgs/Index'
-import { TypeAnimation } from 'react-type-animation'
+import Photo from '../images/foto.webp';
+import { Email, GitHub, LinkedIn } from './svgs/Index';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function HomePage() {
   return (
@@ -14,13 +14,13 @@ export default function HomePage() {
           <TypeAnimation
             sequence={[
               "Matheus",
-              800,
+              3000,
               "Web dev",
-              800,
+              3000,
             ]}
-            speed={5}
+            speed={1}
             repeat={Infinity}
-            className="text-5xl font-bold"
+            className="text-[2.8rem] font-bold"
           />
         </div>
         <p className="w-full text-center">

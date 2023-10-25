@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import { Amiko } from 'next/font/google'
+import Image from 'next/image';
+import { Amiko } from 'next/font/google';
 
-import Navbar from './components/navbar'
-import HomePage from './components/home'
+import Navbar from './components/navbar';
+import HomePage from './components/home';
 
 const amiko = Amiko({subsets: ['latin'], weight: ['400', '600', '700']})
 
