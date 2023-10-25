@@ -19,7 +19,7 @@ export default function AboutList() {
   };
 
   return (
-    <section className="w-full flex flex-col gap-4">
+    <section className="w-full flex flex-col gap-7">
       <div className="w-full flex justify-between font-bold text-lg">
         <button id='skills' onClick={handleButton} className="flex flex-col justify-center items-center">
           Skills
