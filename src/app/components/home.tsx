@@ -1,15 +1,27 @@
+"use client"
 import Image from 'next/image'
 
 import Photo from '../images/foto.webp'
 import { Email, GitHub, LinkedIn } from './svgs/Index'
+import { TypeAnimation } from 'react-type-animation'
 
 export default function HomePage() {
   return (
     <section>
       <div className="flex flex-col h-screen justify-center items-center gap-8 px-[34px] pt-20 pb-4">
         <div className="text-5xl">
-          <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-l from-lightBlue to-purple">Hello! I'm</h1>
-          <h1 className="font-semibold">Matheus</h1>
+          <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-l from-lightBlue to-purple">{`Hello! I'm`}</h1>
+          <TypeAnimation
+            sequence={[
+              "Matheus",
+              800,
+              "Web dev",
+              800,
+            ]}
+            speed={5}
+            repeat={Infinity}
+            className="text-5xl font-bold"
+          />
         </div>
         <p className="w-full text-center">
           Venha solucionar seus problemas com SITES, LANDING PAGES e muito mais!

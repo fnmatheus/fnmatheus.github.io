@@ -12,7 +12,8 @@
     "hamburger-react": "^2.5.0",
     "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
