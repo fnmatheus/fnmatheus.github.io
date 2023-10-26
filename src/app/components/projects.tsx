@@ -18,15 +18,15 @@ export default function Projects() {
   return (
     <section className="flex flex-col justify-center items-center px-[34px] gap-4 pb-4">
       <h2 className="font-bold text-3xl">Meus Projetos</h2>
-      <section>
-        <div>
-          <button id='all' onClick={handleFillter}>
+      <section className="w-full">
+        <div className="flex justify-around">
+          <button id="all" onClick={handleFillter}>
             todos
           </button>
-          <button id='frontend' onClick={handleFillter}>
+          <button id="frontend" onClick={handleFillter}>
             front-end
           </button>
-          <button id='backend' onClick={handleFillter}>
+          <button id="backend" onClick={handleFillter}>
             backend
           </button>
         </div>
@@ -39,10 +39,10 @@ export default function Projects() {
                     {
                       true &&
                       <>
-                        <a href={project.codeLink}>
+                        <a href={project.codeLink} target="_blank">
                           <Code />
                         </a>
-                        <a href={project.link}>
+                        <a href={project.link} target="_blank">
                           <Eye />
                         </a>
                       </>
