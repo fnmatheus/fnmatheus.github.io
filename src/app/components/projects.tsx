@@ -10,7 +10,6 @@ export default function Projects() {
   const handleFillter = (e: React.MouseEvent) => {
     e.preventDefault();
     const target = e.target as HTMLButtonElement;
-    console.log('aqui');
 
     if(target.id === 'all') setFillter('all');
     else if(target.id == 'frontend') setFillter('frontend');
@@ -33,7 +32,7 @@ export default function Projects() {
     <section className="flex flex-col justify-center items-center px-[17px] gap-4 pb-4">
       <h2 className="font-bold text-3xl">Meus Projetos</h2>
       <section className="w-full">
-        <div className="flex justify-around px-[17px]">
+        <div className="flex justify-around px-[17px] pb-4">
           <div className={`${fillter === 'all' ? 'bg-gradient-to-l from-lightBlue to-purple' : 'bg-grey'} w-[96px] h-[27px] rounded-full flex justify-center items-center p-[2px]`}>
             <button id="all" onClick={handleFillter} className="w-full h-full rounded-full bg-darkGrey flex justify-center items-center">
               todos
@@ -51,11 +50,11 @@ export default function Projects() {
           </div>
         </div>
         <div>
-          <ul>
+          <ul className="grid grid-cols-2 gap-4">
             {
               projects.filter(project => project.tags.includes(fillter)).map((project, i) => 
-                <li key={i}>
-                  <div id={String(project.id)} className="w-[172px] h-[125px] bg-purple rounded-[16px]" onClick={handleProject}>
+                <li key={i} className="w-[172px] h-max flex flex-col gap-2 justify-center items-center pb-2">
+                  <div id={String(project.id)} className={`w-[172px] h-[125px] bg-purple rounded-[16px]`} onClick={handleProject}>
                     {
                       (hiddenProject === project.id) &&
                       <>
@@ -71,7 +70,9 @@ export default function Projects() {
                       </>
                     }
                   </div>
-                  { project.name }
+                  <h4 className="font-bold">
+                    { project.name }
+                  </h4>
                 </li>
               )
             }
