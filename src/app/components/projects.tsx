@@ -5,21 +5,29 @@ import { Code, Eye } from './svgs/Index';
 
 export default function Projects() {
   const [fillter, setFillter] = useState('all');
+  const [hiddenProject, setHiddenProject] = useState(0);
 
   const handleFillter = (e: React.MouseEvent) => {
     e.preventDefault();
     const target = e.target as HTMLButtonElement;
+    console.log('aqui');
 
     if(target.id === 'all') setFillter('all');
     else if(target.id == 'frontend') setFillter('frontend');
     else setFillter('backend');
   }
+
+  const handleProject = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const target = e.target as HTMLButtonElement;
+    setHiddenProject(Number(target.id));
+  }
   
   return (
-    <section className="flex flex-col justify-center items-center px-[34px] gap-4 pb-4">
+    <section className="flex flex-col justify-center items-center px-[17px] gap-4 pb-4">
       <h2 className="font-bold text-3xl">Meus Projetos</h2>
       <section className="w-full">
-        <div className="flex justify-around">
+        <div className="flex justify-around px-[17px]">
           <div className={`${fillter === 'all' ? 'bg-gradient-to-l from-lightBlue to-purple' : 'bg-grey'} w-[96px] h-[27px] rounded-full flex justify-center items-center p-[2px]`}>
             <button id="all" onClick={handleFillter} className="w-full h-full rounded-full bg-darkGrey flex justify-center items-center">
               todos
@@ -41,16 +49,19 @@ export default function Projects() {
             {
               projects.filter(project => project.tags.includes(fillter)).map((project, i) => 
                 <li key={i}>
-                  <div className="w-[172px] h-[125px] bg-purple rounded-[16px]">
+                  <div id={String(project.id)} className="w-[172px] h-[125px] bg-purple rounded-[16px]" onClick={handleProject}>
                     {
-                      false &&
+                      (hiddenProject === project.id) &&
                       <>
-                        <a href={project.codeLink} target="_blank">
-                          <Code />
-                        </a>
-                        <a href={project.link} target="_blank">
-                          <Eye />
-                        </a>
+                        <div className="absolute w-[172px] h-[125px] bg-darkGrey rounded-[16px] z-0 opacity-60" />
+                        <div className="flex justify-around items-center h-full text-5xl">
+                          <a className="relative z-10" href={project.codeLink} target="_blank">
+                            <Code />
+                          </a>
+                          <a className="relative z-10" href={project.link} target="_blank">
+                            <Eye />
+                          </a>
+                        </div>
                       </>
                     }
                   </div>
