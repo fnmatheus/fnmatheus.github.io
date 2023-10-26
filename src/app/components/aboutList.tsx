@@ -38,15 +38,15 @@ export default function AboutList() {
         <ul className="list-inside list-disc">
           { 
             list == 0 &&
-            skills.map(skill => <li>{ skill }</li>)
+            skills.map(skill => <li key={skill}>{ skill }</li>)
           }
           { 
             list == 1 &&
-            studies.map(studie => <li>{ studie }</li>)
+            studies.map(studie => <li key={studie}>{ studie }</li>)
           }
           { 
             list == 2 &&
-            certificates.map(certificate => <li>{ certificate }</li>)
+            certificates.map(certificate => <li key={certificate}>{ certificate }</li>)
           }
         </ul>
       </div>
