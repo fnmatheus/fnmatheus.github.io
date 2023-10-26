@@ -41,9 +41,9 @@ export default function Projects() {
             {
               projects.filter(project => project.tags.includes(fillter)).map((project, i) => 
                 <li key={i}>
-                  <div>
+                  <div className="w-[172px] h-[125px] bg-purple rounded-[16px]">
                     {
-                      true &&
+                      false &&
                       <>
                         <a href={project.codeLink} target="_blank">
                           <Code />
