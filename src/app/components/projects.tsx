@@ -54,7 +54,12 @@ export default function Projects() {
             {
               projects.filter(project => project.tags.includes(fillter)).map((project, i) => 
                 <li key={i} className="w-[172px] h-max flex flex-col gap-2 justify-center items-center pb-2">
-                  <div id={String(project.id)} className={`w-[172px] h-[125px] bg-purple rounded-[16px]`} onClick={handleProject}>
+                  <div
+                    id={String(project.id)}
+                    className={`w-[172px] h-[125px] bg-center bg-contain rounded-[16px]`}
+                    style={{backgroundImage: `url(${project.image})`}}
+                    onClick={handleProject}
+                  >
                     {
                       (hiddenProject === project.id) &&
                       <>
