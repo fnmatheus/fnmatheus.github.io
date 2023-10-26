@@ -22,6 +22,12 @@ export default function Projects() {
     const target = e.target as HTMLButtonElement;
     setHiddenProject(Number(target.id));
   }
+
+  const handleLink = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const target = e.currentTarget as HTMLButtonElement;
+    window.open(target.id, '_blank');
+  }
   
   return (
     <section className="flex flex-col justify-center items-center px-[17px] gap-4 pb-4">
@@ -55,12 +61,12 @@ export default function Projects() {
                       <>
                         <div className="absolute w-[172px] h-[125px] bg-darkGrey rounded-[16px] z-0 opacity-60" />
                         <div className="flex justify-around items-center h-full text-5xl">
-                          <a className="relative z-10" href={project.codeLink} target="_blank">
+                          <button id={project.codeLink} className="relative z-10" onClick={handleLink}>
                             <Code />
-                          </a>
-                          <a className="relative z-10" href={project.link} target="_blank">
+                          </button>
+                          <button id={project.link} className="relative z-10" onClick={handleLink}>
                             <Eye />
-                          </a>
+                          </button>
                         </div>
                       </>
                     }
