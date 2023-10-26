@@ -4,6 +4,6 @@ export const projects = [
     image: "",
     codeLink: "https://github.com/fnmatheus/fnmatheus.github.io",
     link: "https://fnmatheus.github.io/",
-    tags: [ "frontend" ]
+    tags: [ "frontend", "all" ]
   }
 ];
