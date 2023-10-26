@@ -20,15 +20,21 @@ export default function Projects() {
       <h2 className="font-bold text-3xl">Meus Projetos</h2>
       <section className="w-full">
         <div className="flex justify-around">
-          <button id="all" onClick={handleFillter}>
-            todos
-          </button>
-          <button id="frontend" onClick={handleFillter}>
-            front-end
-          </button>
-          <button id="backend" onClick={handleFillter}>
-            backend
-          </button>
+          <div className={`${fillter === 'all' ? 'bg-gradient-to-l from-lightBlue to-purple' : 'bg-grey'} w-[96px] h-[27px] rounded-full flex justify-center items-center p-[2px]`}>
+            <button id="all" onClick={handleFillter} className="w-full h-full rounded-full bg-darkGrey flex justify-center items-center">
+              todos
+            </button>
+          </div>
+          <div className={`${fillter === 'frontend' ? 'bg-gradient-to-l from-lightBlue to-purple' : 'bg-grey'} w-[96px] h-[27px] rounded-full flex justify-center items-center p-[2px]`}>
+            <button id="frontend" onClick={handleFillter} className="w-full h-full rounded-full bg-darkGrey flex justify-center items-center">
+              front-end
+            </button>
+          </div>
+          <div className={`${fillter === 'backend' ? 'bg-gradient-to-l from-lightBlue to-purple' : 'bg-grey'} w-[96px] h-[27px] rounded-full flex justify-center items-center p-[2px]`}>
+            <button id="backend" onClick={handleFillter} className="w-full h-full rounded-full bg-darkGrey flex justify-center items-center">
+              backend
+            </button>
+          </div>
         </div>
         <div>
           <ul>
