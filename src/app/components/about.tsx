@@ -2,10 +2,11 @@ import Image from 'next/image';
 
 import Code from '../images/code.webp'
 import AboutList from './aboutList';
+import React from 'react';
 
-export default function About() {
+function About({ addToRefs }: any, ref: any) {
   return (
-    <section className="flex flex-col justify-center items-center px-[34px] gap-4 pb-4">
+    <section id="about" ref={ addToRefs } className="flex flex-col justify-center items-center px-[34px] gap-4 pb-4">
       <Image src={Code} alt="about image" className="w-[300px] rounded-lg" />
       <section className="flex flex-col justify-center items-center gap-4">
         <h2 className="font-bold text-3xl">Sobre mim</h2>
@@ -20,3 +21,7 @@ export default function About() {
     </section>
   )
 }
+
+const forwardAbout = React.forwardRef(About);
+
+export default forwardAbout;

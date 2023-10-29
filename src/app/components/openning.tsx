@@ -4,8 +4,14 @@ import Image from 'next/image';
 import Photo from '../images/photo.webp';
 import { Email, GitHub, LinkedIn } from './svgs/Index';
 import { TypeAnimation } from 'react-type-animation';
+import React from 'react';
 
-export default function HomePage() {
+function Openning({}, ref: any) {
+  const handleLink = (id: string) => {
+    const currentRef = ref.current.filter((page: { id: string }) => page.id === id)[0];
+    currentRef.scrollIntoView({ block: "center", behavior: 'smooth' });
+  }
+
   return (
     <section>
       <div className="flex flex-col h-screen justify-center items-center gap-8 px-[34px] pt-20">
@@ -27,10 +33,10 @@ export default function HomePage() {
           Venha solucionar seus problemas com SITES, LANDING PAGES e muito mais!
         </p>
         <div className="flex flex-col gap-5 w-full">
-          <button className="bg-gradient-to-l from-lightBlue to-purple w-full h-[45px] rounded-full text-xl">
+          <button onClick={ () => handleLink('about') } className="bg-gradient-to-l from-lightBlue to-purple w-full h-[45px] rounded-full text-xl">
             saiba mais!
           </button>
-          <button className="bg-gradient-to-l from-lightBlue to-purple w-full h-[45px] rounded-full flex justify-center items-center px-[2px]">
+          <button onClick={ () => handleLink('contact') } className="bg-gradient-to-l from-lightBlue to-purple w-full h-[45px] rounded-full flex justify-center items-center px-[2px]">
             <div className="w-full h-[41px] rounded-full bg-darkGrey flex justify-center items-center text-xl">
               contate-me
             </div>
@@ -43,9 +49,9 @@ export default function HomePage() {
           <a href="https://github.com/fnmatheus" target="_blank">
             <GitHub className="text-[50px]" />
           </a>
-          <a href="mailto:nasc.matheusfrancisco@gmail.com" target="_blank">
+          <button onClick={ () => handleLink('contact') }>
             <Email className="text-[50px]" />
-          </a>
+          </button>
           <a href="https://www.linkedin.com/in/fnmatheus/" target="_blank">
             <LinkedIn className="text-[50px]" />
           </a>
@@ -54,3 +60,7 @@ export default function HomePage() {
     </section>
   )
 }
+
+const forwardNavbar = React.forwardRef(Openning);
+
+export default forwardNavbar;

@@ -1,9 +1,9 @@
 "use client"
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { projects } from '../utils/projects';
 import { Code, Eye } from './svgs/Index';
 
-export default function Projects() {
+function Projects({ addToRefs }: any, ref: any) {
   const [fillter, setFillter] = useState('all');
   const [hiddenProject, setHiddenProject] = useState(0);
 
@@ -29,7 +29,7 @@ export default function Projects() {
   }
   
   return (
-    <section className="flex flex-col justify-center items-center px-[17px] gap-4 pb-4">
+    <section id="projects" ref={ addToRefs } className="flex flex-col justify-center items-center px-[17px] gap-4 pb-4">
       <h2 className="font-bold text-3xl">Meus Projetos</h2>
       <section className="w-full">
         <div className="flex justify-around px-[17px] pb-4">
@@ -87,3 +87,7 @@ export default function Projects() {
     </section>
   )
 }
+
+const forwardProjects = React.forwardRef(Projects);
+
+export default forwardProjects;

@@ -1,6 +1,8 @@
-export default function Contact() {
+import React from "react";
+
+function Contact({ addToRefs }: any, ref: any) {
   return (
-    <section className="flex flex-col justify-center items-center px-[34px] gap-4 w-full">
+    <section id="contact" ref={ addToRefs } className="flex flex-col justify-center items-center px-[34px] gap-4 w-full">
       <h2 className="font-bold text-3xl">Entre em contato!</h2>
       <p className="text-justify">
         Estou sempre olhando para novas oportunidade e disponivel para contato.
@@ -18,3 +20,7 @@ export default function Contact() {
     </section>
   )
 }
+
+const forwardContact = React.forwardRef(Contact);
+
+export default forwardContact;

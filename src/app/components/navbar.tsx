@@ -1,10 +1,17 @@
 "use client"
 import { Squash as Hamburger } from 'hamburger-react';
-import { useState } from 'react';
+import React, {useState } from 'react';
 import { Logo } from './svgs/Index';
 
-export default function Navbar() {
-  const [isOpen, setOpen] = useState(false)
+function Navbar({}, ref: any) {
+
+  const [isOpen, setOpen] = useState(false);
+  
+  const handleLink = (id: string) => {
+    setOpen(false);
+    const currentRef = ref.current.filter((page: { id: string }) => page.id === id)[0];
+    currentRef.scrollIntoView({ block: "center", behavior: 'smooth' });
+  }
 
   return (
     <header className="w-screen border-b border-lightGrey fixed z-40 bg-darkGrey">
@@ -15,11 +22,15 @@ export default function Navbar() {
       {
         isOpen &&
         <div className="w-screen h-[163px] flex flex-col items-center justify-center gap-5 font-semibold">
-          <button>Sobre mim</button>
-          <button>Projetos</button>
-          <button>Contate-me</button>
+          <button onClick={ () => handleLink('about') }>Sobre mim</button>
+          <button onClick={ () => handleLink('projects') }>Projetos</button>
+          <button onClick={ () => handleLink('contact') }>Contate-me</button>
         </div>
       }
     </header>
   )
 }
+
+const forwardNavbar = React.forwardRef(Navbar);
+
+export default forwardNavbar;
