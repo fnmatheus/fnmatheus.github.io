@@ -1,11 +1,21 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { projects } from '../utils/projects';
 import { Code, Eye } from './svgs/Index';
+
+const fetchUrl = 'https://script.google.com/macros/s/AKfycbySgUNLqqLQVUlEXWIrFVT_T4M97Bx36tbDccyz32k8U_zRYMb4ia4r6S37RaaWuwxm/exec';
 
 function Projects({ addToRefs }: any, ref: any) {
   const [fillter, setFillter] = useState('all');
   const [hiddenProject, setHiddenProject] = useState(0);
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await fetch(fetchUrl);
+      console.log(data);
+    }
+    getData();
+  }, []);
 
   const handleFillter = (e: React.MouseEvent) => {
     e.preventDefault();
