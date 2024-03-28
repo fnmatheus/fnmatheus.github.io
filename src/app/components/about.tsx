@@ -6,7 +6,10 @@ const Code = 'https://lh3.googleusercontent.com/pw/AP1GczN1XgF69V2AhKaNhkmePuO6Y
 function About({ addToRefs }: any, ref: any) {
   return (
     <section id="about" ref={ addToRefs } className="flex flex-col justify-center items-center px-[34px] gap-4 pb-4">
-      <img src={Code} alt="about image" className="w-[300px] rounded-lg" />
+      {
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={Code} alt="about image" className="w-[300px] rounded-lg" />
+      }
       <section className="flex flex-col justify-center items-center gap-4">
         <h2 className="font-bold text-3xl">Sobre mim</h2>
         <p className="text-justify">
