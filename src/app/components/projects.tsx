@@ -1,19 +1,22 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import { projects } from '../utils/projects';
 import { Code, Eye } from './svgs/Index';
+import { IProject } from '../utils/interfaces';
 
-const projectsUrl = 'https://script.google.com/macros/s/AKfycbwJpEVmKcoBw2xLaA7f52CMQbh1lehWQYCdxFtPBVBMTxjGtYjxUzwcQebD5ktZv4V6hA/exec';
+const projectsUrl = 'https://script.google.com/macros/s/AKfycbwwttTjdDna2bMQaJY4HaGFzcCgxu6vN8-EbQBxqX8ZQzDGIWtSeJvTLDbDTlO4BjPVYg/exec';
 
-function Projects({ addToRefs }: any, ref: any) {
+function Projects({ addToRefs }: any) {
   const [fillter, setFillter] = useState('all');
   const [hiddenProject, setHiddenProject] = useState(0);
+  const [projectsArr, setProjectsArr] = useState<IProject[]>([]);
 
   useEffect(() => {
     const getData = async () => {
       try {
         const response = await fetch(projectsUrl, {method: 'GET'});
         const data = await response.json();
+        console.log(data);
+        setProjectsArr(data);
       } catch (error) {
         console.log('error')
       }
@@ -66,7 +69,8 @@ function Projects({ addToRefs }: any, ref: any) {
         <div>
           <ul className="grid grid-cols-2 gap-4">
             {
-              projects.filter(project => project.tags.includes(fillter)).map((project, i) => 
+              projectsArr.length > 0 &&
+              projectsArr.filter(project => project.tags.includes(fillter)).map((project, i) => 
                 <li key={i} className="w-[172px] h-max flex flex-col gap-2 justify-center items-center pb-2">
                   <div
                     id={String(project.id)}
@@ -79,9 +83,12 @@ function Projects({ addToRefs }: any, ref: any) {
                       <>
                         <div className="absolute w-[172px] h-[125px] bg-darkGrey rounded-[16px] z-0 opacity-60" />
                         <div className="flex justify-around items-center h-full text-5xl">
-                          <button id={project.codeLink} className="relative z-10" onClick={handleLink}>
-                            <Code />
-                          </button>
+                          {
+                            project.isOpenSource &&
+                            <button id={project.codeLink} className="relative z-10" onClick={handleLink}>
+                              <Code />
+                            </button>
+                          }
                           <button id={project.link} className="relative z-10" onClick={handleLink}>
                             <Eye />
                           </button>
