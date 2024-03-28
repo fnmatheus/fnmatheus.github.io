@@ -1,6 +1,4 @@
 "use client"
-import Image from 'next/image';
-
 import { Email, GitHub, LinkedIn } from './svgs/Index';
 import { TypeAnimation } from 'react-type-animation';
 import React from 'react';
