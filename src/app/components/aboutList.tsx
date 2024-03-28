@@ -32,7 +32,7 @@ export default function AboutList() {
   };
 
   return (
-    <section className="w-full flex flex-col gap-7">
+    <section className="w-full lg:w-[540px] flex flex-col gap-7">
       <div className="w-full flex justify-between font-bold text-lg">
         <button id='skills' onClick={handleButton} className="flex flex-col justify-center items-center">
           Skills
@@ -47,7 +47,7 @@ export default function AboutList() {
           <div className={`w-[40px] h-[3px] ${(selected !== 'certificates') ? 'bg-transparent' : 'bg-purple'} rounded-full`} />
         </button>
       </div>
-      <div className="h-[180px]">
+      <div className="h-[180px] lg:h-max">
         <ul className="list-inside list-disc">
           {
             list !== undefined &&
