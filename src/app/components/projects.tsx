@@ -15,10 +15,9 @@ function Projects({ addToRefs }: any) {
       try {
         const response = await fetch(projectsUrl, {method: 'GET'});
         const data = await response.json();
-        console.log(data);
         setProjectsArr(data);
       } catch (error) {
-        console.log('error')
+        console.log('error');
       }
     };
     getData();

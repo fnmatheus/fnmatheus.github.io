@@ -8,6 +8,18 @@ interface IProject {
   id: number
 }
 
+interface IHardSkills {
+  name: string,
+  url: string
+}
+
+interface IHardSkillsList {
+  skills: IHardSkills[],
+  studies: IHardSkills[],
+  certificates: IHardSkills[]
+}
+
 export type {
   IProject,
+  IHardSkillsList
 }
