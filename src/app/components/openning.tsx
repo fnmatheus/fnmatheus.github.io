@@ -1,10 +1,9 @@
 "use client"
-import Image from 'next/image';
-
-import Photo from '../images/photo.webp';
 import { Email, GitHub, LinkedIn } from './svgs/Index';
 import { TypeAnimation } from 'react-type-animation';
 import React from 'react';
+
+const Photo = 'https://lh3.googleusercontent.com/pw/AP1GczOHHMNBtwJ2dNf1crvCx-8O33rGkMmOn0fLZR0q_PhJaQuURQuhp-88GK4x8VJNLfJHCLqQauypMyAkE6jr2ndFHwiGXpJdXOzhft6u4QHRYpOFGmscuGlkpdRBA11-YyaigCmpAaHWc2iDRoU49ksG=w773-h773-s-no-gm?authuser=0';
 
 function Openning({}, ref: any) {
   const handleLink = (id: string) => {
@@ -43,7 +42,9 @@ function Openning({}, ref: any) {
           </button>
         </div>
         <div className="rounded-full w-[218px] h-[218px] bg-gradient-to-br from-lightBlue to-purple flex justify-center items-center">
-          <Image src={Photo} alt="photo" className="rounded-full w-[214px] h-[214px]" />
+          {// eslint-disable-next-line @next/next/no-img-element
+          <img src={Photo} alt="photo" className="rounded-full w-[214px] h-[214px]" />
+          }
         </div>
         <div className="flex w-full justify-center items-center gap-[52px]">
           <a href="https://github.com/fnmatheus" target="_blank">
