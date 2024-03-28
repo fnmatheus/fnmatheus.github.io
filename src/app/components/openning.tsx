@@ -35,8 +35,8 @@ function Openning({}, ref: any) {
             className="font-bold"
           />
         </div>
-        <p className="w-full text-center lg:text-lg">
-          Venha solucionar seus problemas com SITES, LANDING PAGES e muito mais!
+        <p className="w-full text-wrap text-center lg:text-3xl">
+          Venha solucionar seus problemas com <br /> SITES, LANDING PAGES e muito mais!
         </p>
         <div className="flex flex-col gap-5 w-full">
           <button onClick={ () => handleLink('about') } className="bg-gradient-to-l from-lightBlue to-purple w-full h-[45px] rounded-full text-xl">
