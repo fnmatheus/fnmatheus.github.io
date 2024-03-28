@@ -12,9 +12,16 @@ function Openning({}, ref: any) {
   }
 
   return (
-    <section>
-      <div className="flex flex-col h-screen justify-center items-center gap-8 px-[34px] pt-20">
-        <div className="text-5xl">
+    <section className="flex justify-around">
+      <div className="flex items-center max-lg:hidden">
+        <div className="rounded-full w-[508px] h-[508px] bg-gradient-to-br from-lightBlue to-purple flex justify-center items-center">
+          {// eslint-disable-next-line @next/next/no-img-element
+          <img src={Photo} alt="photo" className="rounded-full w-[500px] h-[500px]" />
+          }
+        </div>
+      </div>
+      <div className="flex flex-col h-screen justify-center items-center gap-8 lg:gap-16 px-[34px] mt-18">
+        <div className="text-5xl lg:text-7xl">
           <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-l from-lightBlue to-purple">{`Hello! I'm`}</h1>
           <TypeAnimation
             sequence={[
@@ -25,10 +32,10 @@ function Openning({}, ref: any) {
             ]}
             speed={1}
             repeat={Infinity}
-            className="text-[2.8rem] font-bold"
+            className="font-bold"
           />
         </div>
-        <p className="w-full text-center">
+        <p className="w-full text-center lg:text-lg">
           Venha solucionar seus problemas com SITES, LANDING PAGES e muito mais!
         </p>
         <div className="flex flex-col gap-5 w-full">
@@ -41,7 +48,7 @@ function Openning({}, ref: any) {
             </div>
           </button>
         </div>
-        <div className="rounded-full w-[218px] h-[218px] bg-gradient-to-br from-lightBlue to-purple flex justify-center items-center">
+        <div className="rounded-full w-[218px] h-[218px] bg-gradient-to-br from-lightBlue to-purple flex justify-center items-center lg:hidden">
           {// eslint-disable-next-line @next/next/no-img-element
           <img src={Photo} alt="photo" className="rounded-full w-[214px] h-[214px]" />
           }
